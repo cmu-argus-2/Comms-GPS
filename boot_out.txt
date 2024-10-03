@@ -1,0 +1,3 @@
+Adafruit CircuitPython 8.2.10-dirty on 2024-08-13; ArgusMain with samd51j20
+Board ID:ArgusMain
+UID:68B5ED1659354B53202020503B3A0DFF
