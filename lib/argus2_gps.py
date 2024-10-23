@@ -75,6 +75,9 @@ _ST_MAX = _GNZDA
 # TODO: Finish interpreting the NMEA sentences into the field types
 # TODO: Check the field types and their sizes
 # TODO: Test each one of the NMEA sentences
+# TODO: Rework each of the parsing functions to return the correct field types
+
+# NOTE: Discrepancy between the datasheets and the NMEA sentences are likely due to the M characters in the datafields... may need to check this (i.e. the M character in the GGA sentence)
 
 _SENTENCE_PARAMS = (
     # 0 - GPGGA
