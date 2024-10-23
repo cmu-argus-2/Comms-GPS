@@ -739,73 +739,73 @@ class GPS:
         return True
 
 
-class GPS_GtopI2C(GPS):
-    """GTop-compatible I2C GPS parsing module.  Can parse simple NMEA data
-    sentences from an I2C-capable GPS module to read latitude, longitude, and more.
-    """
+# class GPS_GtopI2C(GPS):
+#     """GTop-compatible I2C GPS parsing module.  Can parse simple NMEA data
+#     sentences from an I2C-capable GPS module to read latitude, longitude, and more.
+#     """
 
-    def __init__(
-        self,
-        i2c_bus: I2C,
-        *,
-        address: int = _GPSI2C_DEFAULT_ADDRESS,
-        debug: bool = False,
-        timeout: float = 5.0,
-    ) -> None:
-        from adafruit_bus_device import (  # pylint: disable=import-outside-toplevel
-            i2c_device,
-        )
+#     def __init__(
+#         self,
+#         i2c_bus: I2C,
+#         *,
+#         address: int = _GPSI2C_DEFAULT_ADDRESS,
+#         debug: bool = False,
+#         timeout: float = 5.0,
+#     ) -> None:
+#         from adafruit_bus_device import (  # pylint: disable=import-outside-toplevel
+#             i2c_device,
+#         )
 
-        super().__init__(None, debug)  # init the parent with no UART
-        self._i2c = i2c_device.I2CDevice(i2c_bus, address)
-        self._lastbyte = None
-        self._charbuff = bytearray(1)
-        self._internalbuffer = []
-        self._timeout = timeout
+#         super().__init__(None, debug)  # init the parent with no UART
+#         self._i2c = i2c_device.I2CDevice(i2c_bus, address)
+#         self._lastbyte = None
+#         self._charbuff = bytearray(1)
+#         self._internalbuffer = []
+#         self._timeout = timeout
 
-    def read(self, num_bytes: int = 1) -> bytearray:
-        """Read up to num_bytes of data from the GPS directly, without parsing.
-        Returns a bytearray with up to num_bytes or None if nothing was read"""
-        result = []
-        for _ in range(num_bytes):
-            with self._i2c as i2c:
-                # we read one byte at a time, verify it isnt part of a string of
-                # 'stuffed' newlines and then append to our result array for byteification
-                i2c.readinto(self._charbuff)
-                char = self._charbuff[0]
-                if (char == 0x0A) and (self._lastbyte != 0x0D):
-                    continue  # skip duplicate \n's!
-                result.append(char)
-                self._lastbyte = char  # keep track of the last character approved
-        return bytearray(result)
+#     def read(self, num_bytes: int = 1) -> bytearray:
+#         """Read up to num_bytes of data from the GPS directly, without parsing.
+#         Returns a bytearray with up to num_bytes or None if nothing was read"""
+#         result = []
+#         for _ in range(num_bytes):
+#             with self._i2c as i2c:
+#                 # we read one byte at a time, verify it isnt part of a string of
+#                 # 'stuffed' newlines and then append to our result array for byteification
+#                 i2c.readinto(self._charbuff)
+#                 char = self._charbuff[0]
+#                 if (char == 0x0A) and (self._lastbyte != 0x0D):
+#                     continue  # skip duplicate \n's!
+#                 result.append(char)
+#                 self._lastbyte = char  # keep track of the last character approved
+#         return bytearray(result)
 
-    def write(self, bytestr: ReadableBuffer) -> None:
-        """Write a bytestring data to the GPS directly, without parsing
-        or checksums"""
-        with self._i2c as i2c:
-            i2c.write(bytestr)
+#     def write(self, bytestr: ReadableBuffer) -> None:
+#         """Write a bytestring data to the GPS directly, without parsing
+#         or checksums"""
+#         with self._i2c as i2c:
+#             i2c.write(bytestr)
 
-    @property
-    def in_waiting(self) -> Literal[16]:
-        """Returns number of bytes available in UART read buffer, always 16
-        since I2C does not have the ability to know how much data is available"""
-        return 16
+#     @property
+#     def in_waiting(self) -> Literal[16]:
+#         """Returns number of bytes available in UART read buffer, always 16
+#         since I2C does not have the ability to know how much data is available"""
+#         return 16
 
-    def readline(self) -> Optional[bytearray]:
-        """Returns a newline terminated bytearray, must have timeout set for
-        the underlying UART or this will block forever!"""
-        timeout = time.monotonic() + self._timeout
-        while timeout > time.monotonic():
-            # check if our internal buffer has a '\n' termination already
-            if self._internalbuffer and (self._internalbuffer[-1] == 0x0A):
-                break
-            char = self.read(1)
-            if not char:
-                continue
-            self._internalbuffer.append(char[0])
-            # print(bytearray(self._internalbuffer))
-        if self._internalbuffer and self._internalbuffer[-1] == 0x0A:
-            ret = bytearray(self._internalbuffer)
-            self._internalbuffer = []  # reset the buffer to empty
-            return ret
-        return None  # no completed data yet
+#     def readline(self) -> Optional[bytearray]:
+#         """Returns a newline terminated bytearray, must have timeout set for
+#         the underlying UART or this will block forever!"""
+#         timeout = time.monotonic() + self._timeout
+#         while timeout > time.monotonic():
+#             # check if our internal buffer has a '\n' termination already
+#             if self._internalbuffer and (self._internalbuffer[-1] == 0x0A):
+#                 break
+#             char = self.read(1)
+#             if not char:
+#                 continue
+#             self._internalbuffer.append(char[0])
+#             # print(bytearray(self._internalbuffer))
+#         if self._internalbuffer and self._internalbuffer[-1] == 0x0A:
+#             ret = bytearray(self._internalbuffer)
+#             self._internalbuffer = []  # reset the buffer to empty
+#             return ret
+#         return None  # no completed data yet
