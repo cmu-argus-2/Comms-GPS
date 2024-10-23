@@ -1,3 +1,5 @@
+
+# type: ignore
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
@@ -30,7 +32,7 @@ pin.value = True
 # i2c = board.STEMMA_I2C()  # For using the built-in STEMMA QT connector on a microcontroller
 
 # Create a GPS module instance.
-gps = adafruit_gps.GPS(uart, debug=True)  # Use UART/pyserial
+gps = adafruit_gps.GPS(uart, debug=False)  # Use UART/pyserial
 # gps = adafruit_gps.GPS_GtopI2C(i2c, debug=False)  # Use I2C interface
 
 # Initialize the GPS module by changing what data it sends and at what rate.
