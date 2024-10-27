@@ -6,6 +6,7 @@
 # Simple GPS module demonstration.
 # Will wait for a fix and print a message every second with the current location
 # and other details.
+
 import time
 import board
 import busio
@@ -27,13 +28,8 @@ pin.value = True
 # import serial
 # uart = serial.Serial("/dev/ttyUSB0", baudrate=9600, timeout=10)
 
-# If using I2C, we'll create an I2C interface to talk to using default pins
-# i2c = board.I2C()  # uses board.SCL and board.SDA
-# i2c = board.STEMMA_I2C()  # For using the built-in STEMMA QT connector on a microcontroller
-
 # Create a GPS module instance.
-gps = adafruit_gps.GPS(uart, debug=False)  # Use UART/pyserial
-# gps = adafruit_gps.GPS_GtopI2C(i2c, debug=False)  # Use I2C interface
+gps = adafruit_gps.GPS(uart, debug=True)  # Use UART/pyserial
 
 # Initialize the GPS module by changing what data it sends and at what rate.
 # These are NMEA extensions for PMTK_314_SET_NMEA_OUTPUT and

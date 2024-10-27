@@ -1,0 +1,13 @@
+{
+    "cSpell.words": [
+        "ECEF",
+        "HDOP",
+        "PDOP",
+        "TDOP",
+        "Traq",
+        "VDOP"
+    ],
+    "python.analysis.extraPaths": [
+        "./lib"
+    ]
+}

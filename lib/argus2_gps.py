@@ -24,7 +24,6 @@ Argus II CubeSat Project
 """
 
 import time
-from micropython import const
 
 try:
     from typing import Optional, Tuple, List
@@ -33,28 +32,6 @@ try:
     from busio import UART, I2C
 except ImportError:
     pass
-
-# Minimum needed information from the GPS module, per discussion with Akshat Sahay:
-# GPS_MESSAGE_ID
-# GPS_FIX_MODE
-# GPS_NUMBER_OF_SV
-# GPS_GNSS_WEEK
-# GPS_GNSS_TOW
-# GPS_LATITUDE
-# GPS_LONGITUDE
-# GPS_ELLIPSOID_ALT
-# GPS_MEAN_SEA_LVL_ALT
-# GPS_GDOP
-# GPS_PDOP
-# GPS_HDOP
-# GPS_VDOP
-# GPS_TDOP
-# GPS_POS_X_ECEF
-# GPS_POS_Y_ECEF
-# GPS_POS_Z_ECEF
-# GPS_VEL_X_ECEF
-# GPS_VEL_Y_ECEF
-# GPS_VEL_Z_ECEF
 
 import struct
 
@@ -81,11 +58,11 @@ _ST_MAX = _GNZDA
 
 _SENTENCE_PARAMS = (
     # 0 - GPGGA
-    "",
+    "sdcdciiffcfcDI",
     # 1 - GNGLL
     "dcdcscC",
     # 2 - GNGSA
-    "",
+    "ciIIIIIIIIIIIIfffi",
     # 3 - GPGSV
     "",
     # 4 - GLGSV
@@ -95,11 +72,11 @@ _SENTENCE_PARAMS = (
     # 6 - GBGSV
     "",
     # 7 - GNRMC
-    "",
+    "scdcdcffsDCCC",
     # 8 - GNVTG
-    "",
+    "fCsCfCfCC",
     # 9 - GNZDA
-    "",
+    "sIiIiIiIiI",
     # Explanation of the characters above:
     # c - A single character
     # C - A single character or Nothing
@@ -111,34 +88,9 @@ _SENTENCE_PARAMS = (
     # s - A string
     # S - A string or Nothing
 )
-
-# From the the adafruit code:
-# _SENTENCE_PARAMS = (
-#     # 0 - _GLL
-#     "",
-#     # 1 - _RMC
-#     "scdcdcffsDCC",
-#     # 2 - _GGA
-#     "sdcdciiffsfsIS",
-#     # 3 - _GSA
-#     "ciIIIIIIIIIIIIfff",
-#     # 4 - _GSA_4_11
-#     "ciIIIIIIIIIIIIfffS",
-#     # 5 - _GSV7
-#     "iiiiiiI",
-#     # 6 - _GSV11
-#     "iiiiiiIiiiI",
-#     # 7 - _GSV15
-#     "iiiiiiIiiiIiiiI",
-#     # 8 - _GSV19
-#     "iiiiiiIiiiIiiiIiiiI",
-#     # 9 - _RMC_4_1
-#     "scdcdcffsDCCC",
-
-
-# Internal helper parsing functions.
-# These handle input that might be none or null and return none instead of
-# throwing errors.
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~ Internal Parsing Functions ~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def _parse_degrees(nmea_data: str) -> int:
     # Parse a NMEA lat/long data pair 'dddmm.mmmm' into a pure degrees value.
     # Where ddd is the degrees, mm.mmmm is the minutes.
