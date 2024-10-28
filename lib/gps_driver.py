@@ -1,12 +1,17 @@
-# Very much simplified version of Adafruit's GPS library
+"""
+GPS message receiver.
 
-import time
-from micropython import const
+This module will receive GPS messages from a serial UART and save their data
+to their respective message type fields.
+
+It may be necessary to add sending commands too.
+
+Author: Adrian Walker
+"""
 
 try:
     from typing import Optional, Tuple, List
     from typing_extensions import Literal
-    from circuitpython_typing import ReadableBuffer
     from busio import UART, I2C
 except ImportError:
     pass
@@ -20,8 +25,17 @@ class GPS:
     # pylint: disable-msg=R0915
     def __init__(self, uart: UART, debug: bool = False) -> None:
         self._uart = uart
-        self.data = None
         self.debug = debug
+        self._GPGGA = None
+        self._GNGLL = None
+        self._GNGSA = None
+        self._GPGSV = None
+        self._GLGSV = None
+        self._GAGSV = None
+        self._GBGSV = None
+        self._GNRMC = None
+        self._GNVTG = None
+        self._GNZDA = None
 
 
     def update(self) -> bool:
@@ -37,10 +51,33 @@ class GPS:
         if sentence is None:
             return False
         if self.debug:
-            print("=" * 40)
+            print("Raw sentence:")
             print(sentence)
-            print("-" * 40)
-        self.data = sentence
+
+        if sentence.startswith(b"$GPGGA"):
+            self._GPGGA = sentence
+        elif sentence.startswith(b"$GNGLL"):
+            self._GNGLL = sentence
+        elif sentence.startswith(b"$GNGSA"):
+            self._GNGSA = sentence
+        elif sentence.startswith(b"$GPGSV"):
+            self._GPGSV = sentence
+        elif sentence.startswith(b"$GLGSV"):
+            self._GLGSV = sentence
+        elif sentence.startswith(b"$GAGSV"):
+            self._GAGSV = sentence
+        elif sentence.startswith(b"$GBGSV"):
+            self._GBGSV = sentence
+        elif sentence.startswith(b"$GNRMC"):
+            self._GNRMC = sentence
+        elif sentence.startswith(b"$GNVTG"):
+            self._GNVTG = sentence
+        elif sentence.startswith(b"$GNZDA"):
+            self._GNZDA = sentence
+        else:
+            if self.debug:
+                print("Unknown sentence")
+
         return True
 
     @property
