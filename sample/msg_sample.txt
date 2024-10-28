@@ -1,0 +1,616 @@
+Raw sentence:
+b'$GPGGA,000018.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*64\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000018.000,V,N*56\r\n'
+Raw sentence:
+b'$GNRMC,000018.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*14\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000018.000,06,01,1980,00,00*46\r\n'
+Raw sentence:
+b'$GPGGA,000019.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*65\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000019.000,V,N*57\r\n'
+Raw sentence:
+b'$GNRMC,000019.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*15\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000019.000,06,01,1980,00,00*47\r\n'
+Raw sentence:
+b'$GPGGA,000020.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6F\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000020.000,V,N*5D\r\n'
+Raw sentence:
+b'$GNRMC,000020.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1F\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000020.000,06,01,1980,00,00*4D\r\n'
+Raw sentence:
+b'$GPGGA,000021.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6E\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000021.000,V,N*5C\r\n'
+Raw sentence:
+b'$GNRMC,000021.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1E\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000021.000,06,01,1980,00,00*4C\r\n'
+Raw sentence:
+b'$GPGGA,000022.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6D\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000022.000,V,N*5F\r\n'
+Raw sentence:
+b'$GNRMC,000022.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1D\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000022.000,06,01,1980,00,00*4F\r\n'
+Raw sentence:
+b'$GPGGA,000023.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6C\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000023.000,V,N*5E\r\n'
+Raw sentence:
+b'$GNRMC,000023.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1C\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000023.000,06,01,1980,00,00*4E\r\n'
+Raw sentence:
+b'$GPGGA,000024.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6B\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000024.000,V,N*59\r\n'
+Raw sentence:
+b'$GNRMC,000024.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1B\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000024.000,06,01,1980,00,00*49\r\n'
+Raw sentence:
+b'$GPGGA,000025.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6A\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000025.000,V,N*58\r\n'
+Raw sentence:
+b'$GNRMC,000025.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1A\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000025.000,06,01,1980,00,00*48\r\n'
+Raw sentence:
+b'$GPGGA,000026.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*69\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000026.000,V,N*5B\r\n'
+Raw sentence:
+b'$GNRMC,000026.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*19\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000026.000,06,01,1980,00,00*4B\r\n'
+Raw sentence:
+b'$GPGGA,000027.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*68\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000027.000,V,N*5A\r\n'
+Raw sentence:
+b'$GNRMC,000027.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*18\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000027.000,06,01,1980,00,00*4A\r\n'
+Raw sentence:
+b'$GPGGA,000028.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*67\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000028.000,V,N*55\r\n'
+Raw sentence:
+b'$GNRMC,000028.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*17\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000028.000,06,01,1980,00,00*45\r\n'
+Raw sentence:
+b'$GPGGA,000029.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*66\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000029.000,V,N*54\r\n'
+Raw sentence:
+b'$GNRMC,000029.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*16\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000029.000,06,01,1980,00,00*44\r\n'
+Raw sentence:
+b'$GPGGA,000030.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6E\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000030.000,V,N*5C\r\n'
+Raw sentence:
+b'$GNRMC,000030.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1E\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000030.000,06,01,1980,00,00*4C\r\n'
+Raw sentence:
+b'$GPGGA,000031.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6F\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000031.000,V,N*5D\r\n'
+Raw sentence:
+b'$GNRMC,000031.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1F\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000031.000,06,01,1980,00,00*4D\r\n'
+Raw sentence:
+b'$GPGGA,000032.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6C\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000032.000,V,N*5E\r\n'
+Raw sentence:
+b'$GNRMC,000032.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1C\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000032.000,06,01,1980,00,00*4E\r\n'
+Raw sentence:
+b'$GPGGA,000033.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6D\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000033.000,V,N*5F\r\n'
+Raw sentence:
+b'$GNRMC,000033.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1D\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000033.000,06,01,1980,00,00*4F\r\n'
+Raw sentence:
+b'$GPGGA,000034.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6A\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000034.000,V,N*58\r\n'
+Raw sentence:
+b'$GNRMC,000034.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1A\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000034.000,06,01,1980,00,00*48\r\n'
+Raw sentence:
+b'$GPGGA,000035.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6B\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000035.000,V,N*59\r\n'
+Raw sentence:
+b'$GNRMC,000035.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1B\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000035.000,06,01,1980,00,00*49\r\n'
+Raw sentence:
+b'$GPGGA,000036.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*68\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000036.000,V,N*5A\r\n'
+Raw sentence:
+b'$GNRMC,000036.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*18\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000036.000,06,01,1980,00,00*4A\r\n'
+Raw sentence:
+b'$GPGGA,000037.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*69\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000037.000,V,N*5B\r\n'
+Raw sentence:
+b'$GNRMC,000037.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*19\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000037.000,06,01,1980,00,00*4B\r\n'
+Raw sentence:
+b'$GPGGA,000038.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*66\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000038.000,V,N*54\r\n'
+Raw sentence:
+b'$GNRMC,000038.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*16\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000038.000,06,01,1980,00,00*44\r\n'
+Raw sentence:
+b'$GPGGA,000039.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*67\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000039.000,V,N*55\r\n'
+Raw sentence:
+b'$GNRMC,000039.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*17\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000039.000,06,01,1980,00,00*45\r\n'
+Raw sentence:
+b'$GPGGA,000040.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*69\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000040.000,V,N*5B\r\n'
+Raw sentence:
+b'$GNRMC,000040.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*19\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000040.000,06,01,1980,00,00*4B\r\n'
+Raw sentence:
+b'$GPGGA,000041.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*68\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000041.000,V,N*5A\r\n'
+Raw sentence:
+b'$GNRMC,000041.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*18\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000041.000,06,01,1980,00,00*4A\r\n'
+Raw sentence:
+b'$GPGGA,000042.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6B\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000042.000,V,N*59\r\n'
+Raw sentence:
+b'$GNRMC,000042.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1B\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000042.000,06,01,1980,00,00*49\r\n'
+Raw sentence:
+b'$GPGGA,000043.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6A\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000043.000,V,N*58\r\n'
+Raw sentence:
+b'$GNRMC,000043.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1A\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000043.000,06,01,1980,00,00*48\r\n'
+Raw sentence:
+b'$GPGGA,000044.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6D\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000044.000,V,N*5F\r\n'
+Raw sentence:
+b'$GNRMC,000044.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1D\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000044.000,06,01,1980,00,00*4F\r\n'
+Raw sentence:
+b'$GPGGA,000045.000,0000.00000,N,00000.00000,E,0,00,0.0,0.0,M,0.0,M,,0000*6C\r\n'
+Raw sentence:
+b'$GPGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,1*2D\r\n'
+Unknown sentence
+Raw sentence:
+b'$GLGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,2*32\r\n'
+Unknown sentence
+Raw sentence:
+b'$GAGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,3*3E\r\n'
+Unknown sentence
+Raw sentence:
+b'$GBGSA,A,1,,,,,,,,,,,,,0.0,0.0,0.0,4*3A\r\n'
+Unknown sentence
+Raw sentence:
+b'$GNGLL,0000.00000,N,00000.00000,E,000045.000,V,N*5E\r\n'
+Raw sentence:
+b'$GNRMC,000045.000,V,0000.00000,N,00000.00000,E,000.0,000.0,060180,,,N,V*1C\r\n'
+Raw sentence:
+b'$GNVTG,000.0,T,,M,000.0,N,000.0,K,N*1C\r\n'
+Raw sentence:
+b'$GNZDA,000045.000,06,01,1980,00,00*4E\r\n'
