@@ -8,7 +8,7 @@ import digitalio
 # import adafruit_gps
 import gps_driver
 
-DEBUG = False
+DEBUG = True
 
 # Create a serial connection for the GPS connection using default speed and
 # a slightly higher timeout (GPS modules typically update once a second).
@@ -42,6 +42,8 @@ while True:
         last_print = current
         if gps._nav_data["fix_mode"] == 0:
                 print("Waiting for fix...")
+                if DEBUG:
+                    gps.print_parsed_msg()
                 continue
         else:
             print("Updated")
