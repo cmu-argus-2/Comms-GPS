@@ -15,79 +15,6 @@ EPOCH_YEAR = 1980
 EPOCH_MONTH = 1
 EPOCH_DAY = 5
 
-
-# Sample GPS messages:
-# No fix/ no data:
-sample0 = [
-    "0xa0",
-    "0xa1",
-    "0x0",
-    "0x3b",
-    "0xa8",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x5",
-    "0x78",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x5",
-    "0x4",
-    "0x24",
-    "0xa0",
-    "0xe3",
-    "0x70",
-    "0x1e",
-    "0x98",
-    "0x18",
-    "0x80",
-    "0xe2",
-    "0xfc",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0x0",
-    "0xc3",
-    "0xd",
-    "0xa",
-]
-
-
 class GPS:
     def __init__(self, uart: UART, enable=None, debug: bool = False) -> None:
         self._uart = uart
@@ -130,6 +57,23 @@ class GPS:
             self._enable.switch_to_output()
             self._enable = False
 
+
+        self.mock = True
+        # From app note:
+        # self.mock_message = (
+        # b"\xa0\xa1\x00\x3b\xa8\x02\x07\x08\x6a\x03\x21\x7a\x1f\x1b\x1f\x16\xf1\xb6\xe1"
+        # b"\x3c\x1c\x00\x00\x0f\x6f\x00\x00\x17\xb7\x01\x0d\x00\xe4\x00\x7e\x00\xbd\x00"
+        # b"\x8f\xf1\x97\x18\xd2\xe9\x88\x7d\x90\x1a\xfb\x26\xf7\x03\xF5\x09\xFE\x01\x79"
+        # b"\x7C\x4A\xFB\x9B\xA8\x40\x68\x0d\x0a"
+        # )
+        # From Ridge Test:
+        self.mock_message = (
+        b"\xa0\xa1\x00\x3b\xa8\x02\x0f\x09\x26\x01\x66\x7a\x4f\x18\x1e\xac\x4f\xd0\x71"
+        b"\x40\xae\x00\x00\x91\x87\x00\x00\x9e\x7f\x00\xb1\x00\x96\x00\x56\x00\x7b\x00"
+        b"\x5d\x05\x22\x92\x4e\xe3\x7e\x60\xe7\x18\x8b\x33\x6f\xff\xff\xff\xff\xff\xff"
+        b"\xff\xfe\x00\x00\x00\x00\xfd\x0d\x0a"
+        )
+
         super().__init__()
 
     def update(self) -> bool:
@@ -139,6 +83,13 @@ class GPS:
             return False
         if msg is None or len(msg) < 11:
             return False
+
+        if self.debug == True:
+            print(msg)
+
+        if self.mock:
+            msg = self.mock_message
+            print("Mock message: /n", msg)
 
         self._msg = [hex(i) for i in msg]
         self._payload_len = ((msg[2] & 0xFF) << 8) | msg[3]
@@ -232,7 +183,7 @@ class GPS:
         passing it the same data"""
         return self._nav_data["fix_mode"] is not None and self._nav_data["fix_mode"] >= 2
 
-    def parse_lat(self) -> float:
+    def parse_lat(self) -> str:
         # Convert from scale 1/1e-7 to decimal degrees
         latitude = self._nav_data["latitude"] * 1e-7
 
@@ -249,9 +200,21 @@ class GPS:
         latitude_str = f"{degrees}° {minutes}' {seconds:.2f}\" {direction}"
         return latitude_str
 
-    def parse_lon(self) -> float:
-        # Convert from scale 1/1e-7 to decimal degrees
-        longitude = self._nav_data["longitude"] * 1e-7
+    def parse_lon(self) -> str:
+        # Convert raw longitude as signed 32-bit integer
+        raw_longitude = self._nav_data["longitude"]
+        if raw_longitude > 0x7FFFFFFF:  # Handle 32-bit signed conversion
+            raw_longitude -= 0x100000000
+
+        if self.debug:
+            print("Raw Longitude:", raw_longitude)
+
+        # Convert to decimal degrees
+        longitude = raw_longitude / 1e7
+
+        # Normalize longitude to -180 to 180 range (if needed)
+        if longitude > 180:
+            longitude -= 360
 
         # Determine East or West
         direction = "E" if longitude >= 0 else "W"
@@ -265,6 +228,7 @@ class GPS:
         # Format output
         longitude_str = f"{degrees}° {minutes}' {seconds:.2f}\" {direction}"
         return longitude_str
+
 
     def parse_elip_alt(self) -> float:
         # Convert from hundredths of a meter to meters
@@ -402,12 +366,12 @@ class GPS:
         seconds = seconds_in_day % 60
 
         if self.debug:
-            print("Year:", year)
-            print("Month:", month)
-            print("Day:", day)
-            print("Hours:", hours)
-            print("Minutes:", minutes)
-            print("Seconds:", seconds)
+            print("Year:    ", year)
+            print("Month:   ", month)
+            print("Day:     ", day)
+            print("Hours:   ", hours)
+            print("Minutes: ", minutes)
+            print("Seconds: ", seconds)
 
         # Return the date and time as a dictionary
         return {"year": year, "month": month, "day": day, "hour": hours, "minute": minutes, "second": round(seconds, 2)}
@@ -461,10 +425,10 @@ class GPS:
         print(f"ECEF Vy:                    {self.ecef_vy}")
         print(f"ECEF Vz:                    {self.ecef_vz}")
         print(
-            f"Timestamp (UTC): {self.timestamp_utc.get('year')}-{self.timestamp_utc.get('month')}-",
-            f"{self.timestamp_utc.get('day')} {self.timestamp_utc.get('hour')}:",
-            f"{self.timestamp_utc.get('minute')}:{self.timestamp_utc.get('second')}"
-            )
+              f"Timestamp (UTC):            {self.timestamp_utc.get('year')}-{self.timestamp_utc.get('month')}-",
+              f"{self.timestamp_utc.get('day')} {self.timestamp_utc.get('hour')}:",
+              f"{self.timestamp_utc.get('minute')}:{self.timestamp_utc.get('second')}",
+        )
         print("=" * 40)
 
     def get_nav_data(self) -> dict:
